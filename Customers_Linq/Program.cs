@@ -18,16 +18,17 @@
                     IDCustomer = 4, Firstname ="Yves", Name="Ginier",CompanyName="Socerel", Country="Switzerland"}
 
             };
-            
-            //première façon
-            //Console.WriteLine("=============Query 1 :===============");
-            //IEnumerable<string> entreprises =
-            //    customers.Select(client => client.CompanyName);
 
-            //foreach (string cn in entreprises)
-            //{
-            //    Console.WriteLine(cn);
-            //}
+            //1ERE TECHNIQUE : 
+            //Console.WriteLine("=============Query 1 :===============");
+            
+            IEnumerable<string> entreprises =
+                customers.Select(client => client.CompanyName);
+
+            foreach (string cn in entreprises)
+            {
+                Console.WriteLine(cn);
+            }
 
             //Console.WriteLine("=============Query 2 :===============");
 
